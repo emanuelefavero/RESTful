@@ -1,0 +1,26 @@
+### Post
+POST http://localhost:3000/api/post HTTP/1.1
+content-type: application/json
+
+{
+    "name": "hugo",
+    "age": 32
+}
+
+### Get all
+GET http://localhost:3000/api/getAll
+
+### Get by ID
+GET http://localhost:3000/api/getOne/632fe05752f89b1ea579beed
+
+### Update by ID
+PATCH http://localhost:3000/api/update/632fe05752f89b1ea579beed HTTP/1.1
+content-type: application/json
+
+{
+    "name": "john",
+    "age": 57
+}
+
+### Delete by ID
+DELETE http://localhost:3000/api/delete/632fe07052f89b1ea579beef
